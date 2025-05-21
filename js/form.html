@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <title>Pizza Order Form</title>
+
+    <link rel="icon" href="" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <h1>Pizza Order Form</h1>
+      <p>Order your pizza here!</p>
+    </header>
+    <main>
+      <form>
+        <fieldset>
+          <legend>Customer Details</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required placeholder="Enter name here: "/>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </fieldset>
+        <fieldset>
+          <legend>Delivery Method</legend>
+          <label for="delivery-method">Delivery or Collection: </label>
+          <select id="delivery-method" name="delivery-method">
+            <option value="delivery">Delivery</option>
+            <option value="collection">Collection</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label
+            >Number of Pizzas:
+            <input type="number" min="0" max="30" />
+          </label>
+          <br />
+          <legend>Pizza Size</legend>
+          <label for="small"
+            >Small
+            <input type="radio" name="size" id="small" value="small" />
+          </label>
+          <label
+            >Medium
+            <input type="radio" name="size" id="medium" value="medium" />
+          </label>
+          <label
+            >Large
+            <input type="radio" name="size" id="large" value="large" />
+          </label>
+          <label
+            >Extra Large
+            <input type="radio" name="size" id="xlarge" value="xlarge" />
+          </label>
+          <br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Choose Toppings</legend>
+          <label for="pepperoni"
+            >Pepperoni
+            <input
+              type="checkbox"
+              name="toppings"
+              id="pepperoni"
+              value="pepperoni"
+            /><br />
+          </label>
+          <label for="mushrooms"
+            >Mushrooms
+            <input
+              type="checkbox"
+              name="toppings"
+              id="mushrooms"
+              value="mushrooms"
+            /><br />
+          </label>
+          <label for="onions"
+            >Onions
+            <input
+              type="checkbox"
+              name="toppings"
+              id="onions"
+              value="onions"
+            /><br />
+          </label>
+          <label for="olives"
+            >Olives
+            <input
+              type="checkbox"
+              name="toppings"
+              id="olives"
+              value="olives"
+            /><br />
+          </label>
+          <label for="extra_cheese"
+            >Extra Cheese
+            <input
+              type="checkbox"
+              name="extra_cheese"
+              id="extra_cheese"
+              value="extra_cheese"
+            /><br />
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Requests</legend>
+          <label for="requests">Special Instructions:</label>
+          <textarea id="requests" name="requests" rows="3"></textarea>
+        </fieldset>
+        <button type="submit">Place Order</button>
+      </form>
+    </main>
+    <aside></aside>
+    <footer></footer>
+  </body>
+</html>

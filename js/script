@@ -1,0 +1,22 @@
+let count = 5;
+while(count > 0) {
+    console.log(count);
+    count--;
+}
+
+do{}
+
+    while (num>0);
+
+
+
+    function greetings() {
+        console.log ('hello!');
+        let value = 2+3;
+        console.log(value);
+    }
+
+
+    function getUserData() {
+        /**/
+    }
